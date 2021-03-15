@@ -1,0 +1,129 @@
+package com.dxc.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+ 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.dxc.dao.ClaimDAO;
+import com.dxc.model.Claim;
+ 
+
+public class ControllerServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    private ClaimDAO claimDAO;
+ 
+    public void init() {
+        String jdbcURL = getServletContext().getInitParameter("jdbcURL");
+        String jdbcUsername = getServletContext().getInitParameter("jdbcUsername");
+        String jdbcPassword = getServletContext().getInitParameter("jdbcPassword");
+ 
+        claimDAO = new ClaimDAO(jdbcURL, jdbcUsername, jdbcPassword);
+ 
+    }
+ 
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        doGet(request, response);
+    }
+ 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String action = request.getServletPath();
+//        try {
+//            switch (action) {
+//            case "/save":
+//            	saveClaim(request, response);
+//                break;
+//            default:
+//                index(request, response);
+//                break;
+//            }
+//        } catch (SQLException ex) {
+//            throw new ServletException(ex);
+//        } catch (ParseException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+        try {
+			saveClaim(request, response);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+ 
+    
+    private void saveClaim(HttpServletRequest request, HttpServletResponse response)
+            throws SQLException, IOException, ParseException, ServletException {
+    	response.setContentType("text/html"); 
+        String prevClaimNo = claimDAO.getPreviousClaimID();
+        String claimNo = generateClaimNo(prevClaimNo);
+        String policyNo = request.getParameter("policyNo");
+        Boolean checkPolicyNo = claimDAO.checkPolicyNumberExist(policyNo);
+        if (checkPolicyNo != true) {
+        	PrintWriter out = response.getWriter();
+        	out.print("<div class=\"alert alert-danger text-center\" role=\"alert\">\r\n"
+        			+ "  Policy does not exist.\r\n"
+        			+ "</div>");  
+            RequestDispatcher rd=request.getRequestDispatcher("index.jsp");  
+            rd.include(request, response);  
+        }
+        String dateOcc = request.getParameter("dateOccurred");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date dateOccurred = sdf.parse(dateOcc);
+        Boolean isFutureDate = new Date().before(dateOccurred);
+        System.out.println(isFutureDate);
+        if (isFutureDate == true) {
+        	PrintWriter out = response.getWriter();
+        	out.print("<div class=\"alert alert-danger text-center\" role=\"alert\">\r\n"
+        			+ "  Date Occurred cannot be in the future.\r\n"
+        			+ "</div>");  
+            RequestDispatcher rd=request.getRequestDispatcher("index.jsp");  
+            rd.include(request, response); 
+        }
+        java.sql.Date sqlDateOcc = new java.sql.Date(dateOccurred.getTime());
+        
+        String reserveCurrency = request.getParameter("reserveCurrency");
+        String reserveAmount = request.getParameter("reserveAmount");
+        String type = request.getParameter("type");
+        String status;
+        if (type == "save") {
+			status = "Pending";
+		}
+        else {
+			status = "Active";
+		}
+        Claim newClaim = new Claim(claimNo, policyNo, sqlDateOcc, reserveCurrency, reserveAmount, status);
+        claimDAO.saveClaim(newClaim);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        dispatcher.forward(request, response);
+    }
+    
+    private String generateClaimNo(String prevClaimNo) {
+    	if (prevClaimNo == null){
+    		return "CL000001";
+    	}
+		else {
+			Integer num = Integer.parseInt(prevClaimNo.substring(2)) + 1;
+			String newNum = "00000" + num.toString();
+			String newClaimNo = "CL" + newNum.substring(newNum.length()-6);
+			return newClaimNo;
+		}
+	}
+}

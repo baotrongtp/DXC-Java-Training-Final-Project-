@@ -1,0 +1,27 @@
+package com.dxc.model;
+
+import java.sql.Date;
+
+public class Claim {
+	private String claimNo;
+	private String policyNo;
+	private Date dateOccurred;
+	private String reserveCurrency;
+	private String reserveAmount;
+	private String status;
+	
+	
+	public Claim() {
+	}
+	
+	public Claim(String claimNo, String policyNo, Date dateOccurred, String reserveCurrency, String reserveAmount,
+			String status) {
+		this.claimNo = claimNo;
+		this.policyNo = policyNo;
+		this.dateOccurred = dateOccurred;
+		this.reserveCurrency = reserveCurrency;
+		this.reserveAmount = reserveAmount;
+		this.status = status;
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.dxc.controller;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class aa {
+
+	public static void main(String[] args) throws ParseException {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		Date dateOccurred = sdf.parse("2021-03-15");
+		Boolean a = new Date().before(dateOccurred);
+		System.out.println(a);
+	}
+
+}

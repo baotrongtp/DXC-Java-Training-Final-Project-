@@ -1,0 +1,14 @@
+INDEX VERSION 1.131+D:\Learning\DXC Java Training\Final_Project\.metadata\.plugins\org.eclipse.jdt.core
+3834986798.index
+2762687680.index
+2351717383.index
+530255573.index
+2134842940.index
+1626928209.index
+3521996775.index
+2492136587.index
+2722715967.index
+554729735.index
+2284151075.index
+362017672.index
+2966479608.index

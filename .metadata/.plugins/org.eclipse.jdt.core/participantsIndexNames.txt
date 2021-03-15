@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\Learning\DXC Java Training\Final_Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1974984635.index
+\ajaxexampled\src
+D:\Learning\DXC Java Training\Final_Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3341551173.index
+\CreateClaim\src\main\java

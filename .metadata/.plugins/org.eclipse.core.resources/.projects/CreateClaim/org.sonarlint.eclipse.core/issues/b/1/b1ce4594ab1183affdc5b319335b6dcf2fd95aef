@@ -1,0 +1,19 @@
+
+a
+java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8û¾Þ„ƒ/HòRMINORZ
+CODE_SMELL
+b
+java:S1128	"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø8û¾Þ„ƒ/HóRMINORZ
+CODE_SMELL
+c
+java:S1128
+"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8û¾Þ„ƒ/HôRMINORZ
+CODE_SMELL
+}
+java:S20953"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„÷ÅÌ8©÷ªƒƒ/H¾RBLOCKERZBUG
+c
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8û¾Þ„ƒ/HñRMINORZ
+CODE_SMELL
+e
+java:S4925 "-Remove this "Class.forName()", it is useless.(ìè©‡úÿÿÿÿ8©÷ªƒƒ/HÁRMAJORZ
+CODE_SMELL

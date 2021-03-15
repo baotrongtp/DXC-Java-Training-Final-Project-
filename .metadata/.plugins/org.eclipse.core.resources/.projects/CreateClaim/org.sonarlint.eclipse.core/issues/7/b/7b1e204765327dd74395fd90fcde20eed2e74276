@@ -1,0 +1,19 @@
+
+j
+java:S2589"7Remove this expression which always evaluates to "true"(¡ææú8±ş£†ƒ/HŸRMAJORZ
+CODE_SMELL
+u
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(×š—s8±ş£†ƒ/HRBLOCKERZBUG
+x	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÄÃİHRMINORZ
+CODE_SMELL
+k
+java:S1905"3Remove this unnecessary cast to "DatabaseMetaData".(´¤â ùÿÿÿÿ8±ş£†ƒ/H£RMINORZ
+CODE_SMELL
+p	java:S106"9Replace this use of System.out or System.err by a logger.(üÊÃçûÿÿÿÿ8±ş£†ƒ/H§RMAJORZ
+CODE_SMELL
+k	java:S106"9Replace this use of System.out or System.err by a logger.(æÓè8±ş£†ƒ/H¤RMAJORZ
+CODE_SMELL
+k	java:S106"9Replace this use of System.out or System.err by a logger.(¶Ş“8±ş£†ƒ/H¦RMAJORZ
+CODE_SMELL
+p	java:S106"9Replace this use of System.out or System.err by a logger.(”ÏÒûÿÿÿÿ8±ş£†ƒ/H¥RMAJORZ
+CODE_SMELL

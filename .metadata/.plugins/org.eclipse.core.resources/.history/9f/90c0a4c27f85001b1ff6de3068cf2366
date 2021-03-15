@@ -1,0 +1,12 @@
+package com.dxc.controller;
+
+public class aa {
+
+	public static void main(String[] args) {
+		String str = "CL000001";
+		String result = str.substring(2);
+		int num = Integer.parseInt(result);
+		System.out.println(num);
+	}
+
+}

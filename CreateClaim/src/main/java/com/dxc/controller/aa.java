@@ -1,0 +1,15 @@
+package com.dxc.controller;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class aa {
+
+	public static void main(String[] args) throws ParseException {
+		String str = "1234500.001";
+		double d = Double.parseDouble(str); // returns double primitive
+		System.out.println(d);  
+	}
+
+}

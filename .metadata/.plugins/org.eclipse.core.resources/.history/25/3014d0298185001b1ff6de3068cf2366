@@ -1,0 +1,15 @@
+package com.dxc.controller;
+
+public class aa {
+
+	public static void main(String[] args) {
+		String str = "CL000001";
+		String result = str.substring(2);
+		Integer num = Integer.parseInt(result) + 1;
+		String newNum = "00000" + num.toString();
+//		String a = newNum.substring(newNum.length())
+		System.out.println(newNum.length());
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.dxc.controller;
+
+public class aa {
+
+	public static void main(String[] args) {
+		String str = "CL000110";
+		Integer num = Integer.parseInt(str.substring(2)) + 1;
+		String newNum = "00000" + num.toString();
+		String newClaimNo = "CL" + newNum.substring(newNum.length()-6);
+		System.out.println(newClaimNo);
+		
+	}
+
+}

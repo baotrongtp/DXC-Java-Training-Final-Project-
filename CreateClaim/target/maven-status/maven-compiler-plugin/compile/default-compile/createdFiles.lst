@@ -1,0 +1,6 @@
+com\dxc\model\Policy.class
+com\dxc\controller\aa.class
+com\dxc\controller\ControllerServlet.class
+com\dxc\model\Claim.class
+com\dxc\controller\a.class
+com\dxc\dao\ClaimDAO.class
