@@ -103,17 +103,23 @@ public class ControllerServlet extends HttpServlet {
 					else if (compare.equals("1")) {
 //						String action = request.getParameter("action");
 						String status = null;
+						String type = null;
 						if (request.getParameter("save") != null) {
 							status = "Pending";
+							type = "Save";
 						} else if (request.getParameter("approve") != null) {
 							status = "Active";
+							type = "Approve";
 						}
 					
 						Claim newClaim = new Claim(claimNo, policyNo, sqlDateOcc, reserveCurrency, reserveAmount,
 								status);
 						claimDAO.saveClaim(newClaim);
-						RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
-						dispatcher.forward(request, response);
+						PrintWriter out = response.getWriter();
+						out.print("<div class=\"alert alert-success text-center\" role=\"alert\">\r\n"
+								+ "" + type + " claim successfully.\r\n" + "</div>");
+						RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+						rd.include(request, response);
 					}
 					else {
 						PrintWriter out = response.getWriter();

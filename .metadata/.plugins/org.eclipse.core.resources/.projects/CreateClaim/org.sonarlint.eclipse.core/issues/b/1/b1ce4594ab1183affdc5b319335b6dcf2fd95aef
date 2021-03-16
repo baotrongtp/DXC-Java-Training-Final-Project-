@@ -1,19 +1,56 @@
 
-a
-java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8û¾Þ„ƒ/HòRMINORZ
-CODE_SMELL
 b
-java:S1128	"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø8û¾Þ„ƒ/HóRMINORZ
+java:S1128	"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø8û¾Þ„ƒ/H¿+RMINORZ
 CODE_SMELL
 c
-java:S1128
-"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8û¾Þ„ƒ/HôRMINORZ
-CODE_SMELL
-}
-java:S20953"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„÷ÅÌ8©÷ªƒƒ/H¾RBLOCKERZBUG
-c
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8û¾Þ„ƒ/HñRMINORZ
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8û¾Þ„ƒ/HÀ+RMINORZ
 CODE_SMELL
 e
-java:S4925 "-Remove this "Class.forName()", it is useless.(ìè©‡úÿÿÿÿ8©÷ªƒƒ/HÁRMAJORZ
+java:S4925""-Remove this "Class.forName()", it is useless.(ìè©‡úÿÿÿÿ8©÷ªƒƒ/HÁ+RMAJORZ
+CODE_SMELL
+c
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8û¾Þ„ƒ/HÂ+RMINORZ
+CODE_SMELL
+}
+java:S20954"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„÷ÅÌ8©÷ªƒƒ/HÃ+RBLOCKERZBUG
+}
+java:S2095z"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„÷ÅÌ8Ç©ÌÁƒ/HÄ+RBLOCKERZBUG
+~
+java:S2095²"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„÷ÅÌ8Ç©ÌÁƒ/HÅ+RBLOCKERZBUG
+}
+java:S2095\"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„÷ÅÌ8Ç©ÌÁƒ/HÆ+RBLOCKERZBUG
+~
+java:S2095—"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„÷ÅÌ8Ç©ÌÁƒ/HÇ+RBLOCKERZBUG
+}
+java:S2095G"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(„÷ÅÌ8Ç©ÌÁƒ/HÈ+RBLOCKERZBUG
+q
+java:S2259¡"DA "NullPointerException" could be thrown; "status" is nullable here.(Ù¶•º8Ç©ÌÁƒ/HÉ+RMAJORZBUG
+s
+java:S2259½"FA "NullPointerException" could be thrown; "currency" is nullable here.(ÚƒÏ™8Ç©ÌÁƒ/HÌ+RMAJORZBUG
+]
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8Ç©ÌÁƒ/HÏ+RMINORZ
+CODE_SMELL
+y
+java:S1126h"AReplace this if-then-else statement by a single return statement.(¦ÝÈ“ûÿÿÿÿ8Ç©ÌÁƒ/HÐ+RMINORZ
+CODE_SMELL
+u
+java:S1126ˆ"AReplace this if-then-else statement by a single return statement.(—ÚÅ’8Ç©ÌÁƒ/HÑ+RMINORZ
+CODE_SMELL
+\
+java:S1125ˆ"(Remove the literal "true" boolean value.(—ÚÅ’8Ç©ÌÁƒ/HÒ+RMINORZ
+CODE_SMELL
+\
+java:S1125ˆ"(Remove the literal "true" boolean value.(—ÚÅ’8Ç©ÌÁƒ/HÓ+RMINORZ
+CODE_SMELL
+ª
+java:S1130‘"qRemove the declaration of thrown exception 'java.text.ParseException', as it cannot be thrown from method's body.(€šˆ²ùÿÿÿÿ8Ç©ÌÁƒ/HÔ+RMINORZ
+CODE_SMELL
+u
+java:S1126¡"AReplace this if-then-else statement by a single return statement.(Ù¶•º8Ç©ÌÁƒ/HÕ+RMINORZ
+CODE_SMELL
+ª
+java:S1130«"qRemove the declaration of thrown exception 'java.text.ParseException', as it cannot be thrown from method's body.(ƒ¦”ôúÿÿÿÿ8Ç©ÌÁƒ/HÖ+RMINORZ
+CODE_SMELL
+c
+java:S1481q"+Remove this unused "status" local variable.(‘ã¨Ýÿÿÿÿÿ8Ç©ÌÁƒ/H×+RMINORZ
 CODE_SMELL

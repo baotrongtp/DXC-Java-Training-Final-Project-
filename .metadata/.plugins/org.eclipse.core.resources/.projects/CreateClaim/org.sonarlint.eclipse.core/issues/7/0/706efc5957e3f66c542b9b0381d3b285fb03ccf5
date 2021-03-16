@@ -1,51 +1,52 @@
 
-¦
-java:S1130I"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(íú”æûÿÿÿÿ8¥¸ˆ…ƒ/H£RMINORZ
-CODE_SMELL
-p	java:S106)"9Replace this use of System.out or System.err by a logger.(³¦šÊùÿÿÿÿ8»½å…ƒ/HÔRMAJORZ
+c
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¥¸ˆ…ƒ/H+RMINORZ
 CODE_SMELL
 k
-java:S1161!":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿH£RMAJORZ
-CODE_SMELL
-“
-java:S1989#"_Handle the following exceptions that could be thrown by "doGet": ServletException, IOException.(®Ó‘ûÿÿÿÿÿH¡RMINORZVULNERABILITY
-c
-java:S1481("+Remove this unused "action" local variable.(ÍúßÁÿÿÿÿÿ8×ö…ƒ/HöRMINORZ
-CODE_SMELL
-e
-java:S4973Z"9Use the "equals" method if value comparison was intended.(ä¥‰Ä8–İ‚…ƒ/H•RMAJORZBUG
-f
-java:S1161&":Add the "@Override" annotation above this method signature(÷¤‹úH¢RMAJORZ
-CODE_SMELL
-r
-java:S1854(":Remove this useless assignment to local variable "action".(ÍúßÁÿÿÿÿÿ8×ö…ƒ/HéRMAJORZ
-CODE_SMELL
-b
-java:S1144H"*Remove this unused private "index" method.(¦íˆíøÿÿÿÿ8×ö…ƒ/H÷RMAJORZ
-CODE_SMELL
-d
-java:S11356"2Complete the task associated to this TODO comment.(ÉÚõÎ8ñïÏ„ƒ/H‹RINFOZ
-CODE_SMELL
-m
-java:S1161":Add the "@Override" annotation above this method signature( Üó8­ÙŸ„ƒ/H¤RMAJORZ
-CODE_SMELL
-s	java:S125*"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8×ö…ƒ/HêRMAJORZ
-CODE_SMELL
-c
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¥¸ˆ…ƒ/H¢RMINORZ
+java:S1161!":Add the "@Override" annotation above this method signature(ş³‚”ûÿÿÿÿH+RMAJORZ
 CODE_SMELL
 w
-java:S2147>"DCombine this catch with the one at line 59, which has the same body.(ï­£Ä8ŸÆ÷…ƒ/HŠRMINORZ
+java:S2147-"DCombine this catch with the one at line 43, which has the same body.(ï­£Ä8ŸÆ÷…ƒ/H‘+RMINORZ
+CODE_SMELL
+f
+java:S1161&":Add the "@Override" annotation above this method signature(÷¤‹úH“+RMAJORZ
+CODE_SMELL
+“
+java:S1989#"_Handle the following exceptions that could be thrown by "doGet": ServletException, IOException.(®Ó‘ûÿÿÿÿÿH”+RMINORZVULNERABILITY
+m
+java:S1161":Add the "@Override" annotation above this method signature( Üó8­ÙŸ„ƒ/H•+RMAJORZ
 CODE_SMELL
 |
-java:S2147A"DCombine this catch with the one at line 59, which has the same body.(âÃƒŠıÿÿÿÿ8ŸÆ÷…ƒ/HŒRMINORZ
+java:S2147/"DCombine this catch with the one at line 43, which has the same body.(âÃƒŠıÿÿÿÿ8ŸÆ÷…ƒ/H–+RMINORZ
 CODE_SMELL
-i
-java:S1135<"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ŸÆ÷…ƒ/HRINFOZ
+¸
+java:S1192?"Define a constant instead of duplicating this literal "<div class=\"alert alert-danger text-center\" role=\"alert\">\r
+" 5 times.(¥ÏĞÔ8¡¤ÌÁƒ/H˜+RCRITICALZ
 CODE_SMELL
-i
-java:S1135?"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ŸÆ÷…ƒ/HRINFOZ
+…
+java:S1192A"JDefine a constant instead of duplicating this literal "index.jsp" 6 times.(á Œòúÿÿÿÿ8¡¤ÌÁƒ/H+RCRITICALZ
 CODE_SMELL
-i
-java:S1135B"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ŸÆ÷…ƒ/HRINFOZ
+‚
+java:S1192@"GDefine a constant instead of duplicating this literal "</div>" 6 times.(á•Ÿ·øÿÿÿÿ8¡¤ÌÁƒ/H¥+RCRITICALZ
+CODE_SMELL
+b
+java:S5411="*Use the primitive boolean expression here.(‘Èö“üÿÿÿÿ8¡¤ÌÁƒ/H¬+RMINORZ
+CODE_SMELL
+]
+java:S5411F"*Use the primitive boolean expression here.(Ûóù¬8¡¤ÌÁƒ/H­+RMINORZ
+CODE_SMELL
+b
+java:S5411S"*Use the primitive boolean expression here.(¾º­Ìÿÿÿÿÿ8¡¤ÌÁƒ/H®+RMINORZ
+CODE_SMELL
+›
+java:S1488’"bImmediately return this expression instead of assigning it to the temporary variable "newClaimNo".(ğŞĞ™ıÿÿÿÿ8¡¤ÌÁƒ/H¯+RMINORZ
+CODE_SMELL
+s	java:S125("<This block of commented-out lines of code should be removed.(¿êŠûÿÿÿÿ8¡¤ÌÁƒ/H°+RMAJORZ
+CODE_SMELL
+
+java:S1989*"UHandle the following exception that could be thrown by "saveClaim": ServletException.(»Å€Ñÿÿÿÿÿ8¡¤ÌÁƒ/H±+RMINORZVULNERABILITY
+ˆ
+java:S37764"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ë—ğÕ8¡¤ÌÁƒ/H²+RCRITICALZ
+CODE_SMELL
+n	java:S125h"<This block of commented-out lines of code should be removed.(”¡ÿŒ8¡¤ÌÁƒ/H¾+RMAJORZ
 CODE_SMELL
